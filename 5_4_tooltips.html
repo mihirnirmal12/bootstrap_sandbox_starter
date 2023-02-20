@@ -88,29 +88,29 @@
     <!--###################START HERE######################-->
 
     <!-- TOOLTIPS -->
-    <button class="btn btn-primary">Tooltip On Top</button>
-    <button class="btn btn-success">Tooltip On Right</button>
-    <button class="btn btn-warning">Tooltip On Bottom</button>
-    <button class="btn btn-danger">Tooltip On Left</button>
+    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="tooltip on top">Tooltip On Top</button>
+    <button class="btn btn-success" data-toggle="tooltip" data-placement="right" title="tooltip on right">Tooltip On Right</button>
+    <button class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="tooltip on Bottom">Tooltip On Bottom</button>
+    <button class="btn btn-danger"  data-toggle="tooltip" data-placement="left" title="tooltip on left">Tooltip On Left</button>
 
     <br>
     <br>
 
     <!-- TOOLTIPS WITH HTML -->
-    <button class="btn btn-primary">Tooltip On With HTML</button>
+    <button id="myBtn" class="btn btn-primary"  data-toggle="tooltip" data-placement="left" data-html="true" title=" <h1>Hello World<h1/> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nobis quae accusamus consectetur ea facilis, neque ipsum corporis culpa officiis quidem maiores fuga, nam quo inventore sequi tempora? Tempore, necessitatibus! </p>">Tooltip On With HTML</button>
 
     <hr>
 
     <!-- TRIGGER WITH JS -->
-    <button class="btn btn-secondary">
+    <button class="btn btn-secondary" onclick="showTooltip()">
       Show Tooltip
     </button>
 
-    <button class="btn btn-secondary">
+    <button class="btn btn-secondary" onclick="hideTooltip()">
       Hide Tooltip
     </button>
 
-    <button class="btn btn-secondary">
+    <button class="btn btn-secondary" onclick="toggleTooltip()">
       Toggle Tooltip
     </button>
 
@@ -124,9 +124,21 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-  <script>
+    <script>
+      $('[data-toggle="tooltip"]').tooltip();
 
-  </script>
+      function showTooltip(){
+        $('#myBtn').tooltip('show')
+      }
+
+      function hideTooltip(){
+        $('#myBtn').tooltip('hide')
+      }
+
+      function toggleTooltip(){
+        $('#myBtn').tooltip('toggle')
+      }
+    </script>
 </body>
 
 </html>

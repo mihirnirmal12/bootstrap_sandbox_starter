@@ -88,19 +88,19 @@
     <!--##################START HERE####################-->
 
     <!-- POPOVER -->
-    <button class="btn btn-danger">
+    <button class="btn btn-danger" data-toggle="popover" data-placement="top" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
       Toggle popover
     </button>
 
-    <button class="btn btn-primary">
+    <button class="btn btn-primary" data-toggle="popover" data-placement="bottom" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
       Toggle popover
     </button>
 
-    <button class="btn btn-warning">
+    <button class="btn btn-warning" data-toggle="popover" data-placement="left" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
       Toggle popover
     </button>
 
-    <button class="btn btn-info">
+    <button class="btn btn-info" data-toggle="popover" data-placement="right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
       Toggle popover
     </button>
 
@@ -108,16 +108,10 @@
     <br>
 
     <!-- DISMISSIBLE POPOVER -->
-    <button class="btn btn-primary">
+    <button class="btn btn-primary" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
       Toggle popover
     </button>
 
-    <hr>
-
-    <!-- CONTROL WITH JS -->
-    <button class="btn btn-secondary">Show Popover</button>
-    <button class="btn btn-secondary">Hide Popover</button>
-    <button class="btn btn-secondary">Toggle Popover</button>
   </div>
 
   <div style="margin-top:500px;"></div>
@@ -129,7 +123,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
   <script>
-
+    $(function () {
+  $('[data-toggle="popover"]').popover()
+})
   </script>
 </body>
 

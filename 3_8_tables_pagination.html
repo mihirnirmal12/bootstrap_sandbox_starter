@@ -88,13 +88,14 @@
         <!--#####################START HERE######################-->
 
         <!-- TABLE -->
-        <table>
+        <table class="table">
+            <caption></caption>
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -122,13 +123,14 @@
         <br>
 
         <!-- INVERSE/DARK TABLE -->
-        <table>
+        <table class="table table-dark">
+            <caption></caption>
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -156,13 +158,14 @@
         <br>
 
         <!-- TABLE HEAD INVERSE -->
-        <table>
-            <thead>
+        <table class="table table-dark">
+            <caption></caption>
+            <thead class="table table-light text-dark">
                 <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -190,13 +193,14 @@
         <br>
 
         <!-- STRIPED TABLE -->
-        <table>
+        <table class="table table-striped">
+            <caption></caption>
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -222,13 +226,14 @@
         </table>
 
         <!-- BORDERED TABLE -->
-        <table>
+        <table class="table table-bordered">
+            <caption></caption>
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -256,13 +261,14 @@
         <br>
 
         <!-- BORDERLESS TABLE -->
-        <table>
+        <table class="table table-borderless">
+            <caption></caption>
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -290,13 +296,14 @@
         <br>
 
         <!-- HOVERABLE -->
-        <table>
+        <table class="table table-hover">
+            <caption></caption>
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -324,13 +331,14 @@
         <br>
 
         <!-- CONTEXTUAL CLASSES -->
-        <table>
+        <table class="table table-success">
+            <caption></caption>
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -358,13 +366,14 @@
         <br>
 
         <!-- SMALL TABLE -->
-        <table>
+        <table class="table table-sm">
+            <caption></caption>
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -393,13 +402,14 @@
 
         <!-- RESPONSIVE TABLE - Scrollbars -->
         <div>
-            <table>
+            <table class="table table-responsive">
+                <caption></caption>
                 <thead>
                     <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Email</th>
+                        <th scope="col">#</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Email</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -429,39 +439,145 @@
         <br>
 
         <!-- PAGINATION -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Previous</a>
+        <nav aria-label="page navigation">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a href="#" class="page-link">Previous</a>
                 </li>
-                <li>
-                    <a href="#">1</a>
+                <li class="page-item">
+                    <a href="#" class="page-link">1</a>
                 </li>
-                <li>
-                    <a href="#">2</a>
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
                 </li>
-                <li>
-                    <a href="#">3</a>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
                 </li>
-                <li>
-                    <a href="#">Next</a>
+                <li class="page-item">
+                    <a href="#" class="page-link">Next</a>
                 </li>
             </ul>
         </nav>
 
         <!-- PAGINATION CENTERED -->
 
+        <nav aria-label="page navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a href="#" class="page-link">Previous</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">Next</a>
+                </li>
+            </ul>
+        </nav>
+
 
         <!-- PAGINATION RIGHT -->
+
+        <nav aria-label="page navigation">
+            <ul class="pagination justify-content-end">
+                <li class="page-item">
+                    <a href="#" class="page-link">Previous</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">Next</a>
+                </li>
+            </ul>
+        </nav>
+
 
 
         <!-- PAGINATION LARGE -->
 
+        <nav aria-label="page navigation">
+            <ul class="pagination pagination-lg">
+                <li class="page-item">
+                    <a href="#" class="page-link">Previous</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">Next</a>
+                </li>
+            </ul>
+        </nav>
+
+
 
         <!-- PAGINATION SMALL -->
 
+        <nav aria-label="page navigation">
+            <ul class="pagination pagination-sm">
+                <li class="page-item">
+                    <a href="#" class="page-link">Previous</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">Next</a>
+                </li>
+            </ul>
+        </nav>
+
 
         <!-- WITH ARROWS -->
+
+        <nav aria-label="page navigation">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+            </ul>
+        </nav>
 
 
     </div>
